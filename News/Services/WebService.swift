@@ -8,7 +8,7 @@
 import Foundation
 
 class WebSerivce {
-    func getArticles(url: URL, completion: @escaping ([Article]?) -> Void) {
+    static func getArticles(url: URL, completion: @escaping ([Article]?) -> Void) {
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {
                 print(error.localizedDescription)
