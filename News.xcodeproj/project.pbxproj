@@ -15,6 +15,7 @@
 		E51336DC283736610030646E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E51336DA283736610030646E /* LaunchScreen.storyboard */; };
 		E51336E628373DB20030646E /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51336E528373DB20030646E /* WebService.swift */; };
 		E51336E92837406D0030646E /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51336E82837406D0030646E /* Article.swift */; };
+		E51336EC28374AC40030646E /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51336EB28374AC40030646E /* ArticleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E51336DD283736610030646E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E51336E528373DB20030646E /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		E51336E82837406D0030646E /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		E51336EB28374AC40030646E /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		E51336CE2837365E0030646E /* News */ = {
 			isa = PBXGroup;
 			children = (
+				E51336EA28374AAF0030646E /* View Models */,
 				E51336E428373D950030646E /* Services */,
 				E51336E72837405F0030646E /* Models */,
 				E51336E3283739110030646E /* Controllers */,
@@ -95,6 +98,14 @@
 				E51336E82837406D0030646E /* Article.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E51336EA28374AAF0030646E /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				E51336EB28374AC40030646E /* ArticleViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 				E51336D42837365E0030646E /* NewsListTableViewController.swift in Sources */,
 				E51336D02837365E0030646E /* AppDelegate.swift in Sources */,
 				E51336E628373DB20030646E /* WebService.swift in Sources */,
+				E51336EC28374AC40030646E /* ArticleViewModel.swift in Sources */,
 				E51336D22837365E0030646E /* SceneDelegate.swift in Sources */,
 				E51336E92837406D0030646E /* Article.swift in Sources */,
 			);
