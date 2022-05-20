@@ -13,31 +13,42 @@ class ArticleTableViewCell: UITableViewCell {
     
     var titleLabel: UILabel = {
         let label = UILabel()
+        label.numberOfLines = 0
+        label.font = .systemFont(ofSize: 18.0, weight: .bold)
         
         return label
     }()
     
     var descriptionLabel: UILabel = {
         let label = UILabel()
+        label.numberOfLines = 0
+        label.font = .systemFont(ofSize: 14.0, weight: .light)
         
         return label
     }()
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
+    private func setupUI() {
         [ titleLabel, descriptionLabel ]
             .forEach { contentView.addSubview($0) }
         
         titleLabel.snp.makeConstraints { make in
-            make.leading.equalToSuperview().inset(16)
-            make.top.equalToSuperview().inset(16)
+            make.top.leading.trailing.equalToSuperview().inset(16)
         }
         
         descriptionLabel.snp.makeConstraints { make in
-            make.leading.equalToSuperview().inset(16)
-            make.top.equalTo(titleLabel.snp.bottom).offset(8)
+            make.top.equalTo(titleLabel.snp.bottom).offset(4)
+            make.bottom.leading.trailing.equalToSuperview().inset(16)
         }
+    }
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        setupUI()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 
