@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E51336D02837365E0030646E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51336CF2837365E0030646E /* AppDelegate.swift */; };
 		E51336D22837365E0030646E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51336D12837365E0030646E /* SceneDelegate.swift */; };
-		E51336D42837365E0030646E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51336D32837365E0030646E /* ViewController.swift */; };
+		E51336D42837365E0030646E /* NewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51336D32837365E0030646E /* NewsListTableViewController.swift */; };
 		E51336D72837365E0030646E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E51336D52837365E0030646E /* Main.storyboard */; };
 		E51336D9283736610030646E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E51336D8283736610030646E /* Assets.xcassets */; };
 		E51336DC283736610030646E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E51336DA283736610030646E /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		E51336CC2837365E0030646E /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51336CF2837365E0030646E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E51336D12837365E0030646E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E51336D32837365E0030646E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E51336D32837365E0030646E /* NewsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
 		E51336D62837365E0030646E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E51336D8283736610030646E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E51336DB283736610030646E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,23 @@
 		E51336CE2837365E0030646E /* News */ = {
 			isa = PBXGroup;
 			children = (
+				E51336E3283739110030646E /* Controllers */,
 				E51336CF2837365E0030646E /* AppDelegate.swift */,
 				E51336D12837365E0030646E /* SceneDelegate.swift */,
-				E51336D32837365E0030646E /* ViewController.swift */,
 				E51336D52837365E0030646E /* Main.storyboard */,
 				E51336D8283736610030646E /* Assets.xcassets */,
 				E51336DA283736610030646E /* LaunchScreen.storyboard */,
 				E51336DD283736610030646E /* Info.plist */,
 			);
 			path = News;
+			sourceTree = "<group>";
+		};
+		E51336E3283739110030646E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E51336D32837365E0030646E /* NewsListTableViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E51336D42837365E0030646E /* ViewController.swift in Sources */,
+				E51336D42837365E0030646E /* NewsListTableViewController.swift in Sources */,
 				E51336D02837365E0030646E /* AppDelegate.swift in Sources */,
 				E51336D22837365E0030646E /* SceneDelegate.swift in Sources */,
 			);
